@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ThemeProvider } from "@emotion/react";
+import { ThemeProvider, CssBaseline } from '@mui/material';
 
-import theme from "./theme/theme";
-import Login from "../src/features/login/Login";
+import theme from "@/theme/theme";
+import Login from "@/features/login/Login";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,6 +12,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <RouterProvider router={router} />
     </ThemeProvider>
   );

@@ -12,17 +12,18 @@ const theme = createTheme({
       contrastText: "#FFFFFF",
     },
     background: {
-      default: "#FFFFFF", 
+      default: "#FFFFFF",
     },
     text: {
-      primary: "#163352", 
-      secondary: "#4A5E7B", 
+      primary: "#163352",
+      secondary: "#4A5E7B",
     },
     success: {
-      main: "#87D0AC", 
+      main: "#87D0AC",
     },
     divider: "#E0E0E0",
   },
+  fontFamily: ["Poppins", "Roboto", "Helvetica", "Arial", "sans-serif"],
 });
 
 export default theme;
